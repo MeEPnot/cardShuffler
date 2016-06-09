@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1465495970 source:e:\blackjack\shuffle pack\main.cpp
+	<iostream>
+	"shufflePack.h"
+
+1465495931 e:\blackjack\shuffle pack\shufflepack.h
+	"minunileLuiPaul.h"
+	<iostream>
+	<time.h>
+	<cstdlib>
+
+1465495376 e:\blackjack\shuffle pack\minunileluipaul.h
+
