@@ -6,9 +6,9 @@
 
 template <class T>
 
-/*
+/**
     Simple same data type swap
-*/
+**/
 
 void swap(T &first, T &second)
 {
@@ -18,6 +18,10 @@ void swap(T &first, T &second)
     first = second;
     second = auxiliary;
 }
+
+/**
+Random between ranges
+**/
 
 int randRange(int beginR, int endR)
 {
