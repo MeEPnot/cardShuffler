@@ -1,6 +1,9 @@
 #ifndef MINUNILELUIPAUL_H_INCLUDED
 #define MINUNILELUIPAUL_H_INCLUDED
 
+#include <time.h>
+#include <cstdlib>
+
 template <class T>
 
 /*
@@ -14,6 +17,20 @@ void swap(T &first, T &second)
     auxiliary = first;
     first = second;
     second = auxiliary;
+}
+
+int randRange(int beginR, int endR)
+{
+    srand (time(NULL));
+
+    int x=rand();
+
+    while(x<beginR || x>endR)
+    {
+        x=rand();
+    }
+
+    return x;
 }
 
 #endif // MINUNILELUIPAUL_H_INCLUDED

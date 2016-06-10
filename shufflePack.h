@@ -3,8 +3,6 @@
 
 #include "minunileLuiPaul.h"
 #include <iostream>
-#include <time.h>
-#include <cstdlib>
 
 template <class T>
 
@@ -28,22 +26,25 @@ public:
     void shuffle(int numberofShuffles)
     {
         curr=0;
-        srand (time(NULL));
 
         for(int j=1;j<=numberofShuffles;j++)
             for(int i=size-1;i>0;i--)
             {
-                int n=rand() % size;
+                int n=randRange(0,i);
                 swap(internalPack[n], internalPack[i]);
             }
+    }
+
+    T nextCard()
+    {
+        return internalPack[curr++];
     }
 
     void print()
     {
         for(int i=0; i<size; i++)
-            std::cout<<internalPack[i]<<" ";
+            internalPack[i].print();
     }
-
 };
 
 #endif // SHUFFLEPACK_H_INCLUDED
